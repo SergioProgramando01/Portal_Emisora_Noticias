@@ -1,0 +1,28 @@
+/* --- Espacios para Banners --- */
+.banner-ad {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.banner-ad img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.banner-medium-rectangle {
+    height: 250px;
+}
+
+.banner-skyscraper {
+    height: 600px;
+}

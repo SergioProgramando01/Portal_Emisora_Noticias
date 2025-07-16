@@ -1,0 +1,42 @@
+/* --- Contenedor Principal de Contenido y Sidebar --- */
+.main-container {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 280px; /* Contenido principal y sidebar */
+    gap: 30px;
+}
+
+.main-content-area {
+    display: grid;
+    gap: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 10px;
+}
+
+.section-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: var(--color-primario);
+    margin: 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas */
+    gap: 20px;
+}

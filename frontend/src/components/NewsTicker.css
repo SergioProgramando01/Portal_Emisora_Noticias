@@ -1,0 +1,38 @@
+/* --- Franja de Última Hora (News Ticker) --- */
+.breaking-news-bar {
+    background-color: var(--color-gris-medio);
+    color: var(--color-texto-oscuro);
+    padding: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    font-size: 0.9em;
+    z-index: 800;
+}
+
+.breaking-news-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-news 40s linear infinite; /* Aumenté un poco la velocidad */
+}
+
+.breaking-news-content span {
+    margin-right: 40px;
+    font-weight: 700;
+    color: var(--color-accent-blue-purple);
+}
+
+.breaking-news-content a {
+    color: var(--color-texto-oscuro);
+}
+
+.breaking-news-content a:hover {
+    color: var(--color-accent-teal);
+    text-decoration: underline;
+}
+
+@keyframes scroll-news {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}

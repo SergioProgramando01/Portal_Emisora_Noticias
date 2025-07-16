@@ -1,0 +1,74 @@
+/* Estilos de Sección de Noticias */
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.view-more {
+    color: var(--color-primario);
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: 1px solid var(--color-primario);
+}
+.view-more:hover {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* Distribución 1: Noticia principal grande y varias pequeñas */
+.news-layout-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Estilos específicos para la tarjeta principal en este layout */
+.main-news-item .news-item img {
+    height: 400px;
+}
+
+.small-news-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos específicos para las tarjetas pequeñas */
+.small-news-items .news-item {
+    display: flex; /* Para poner imagen al lado de texto */
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid var(--color-gris-claro);
+    padding: 10px;
+}
+
+.small-news-items .news-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.small-news-items .news-item img {
+    width: 100px;
+    height: 70px;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.small-news-items .news-item h3 {
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Ocultamos el resumen y categoría en las tarjetas pequeñas */
+.small-news-items .news-item p,
+.small-news-items .news-item .category {
+    display: none;
+}
